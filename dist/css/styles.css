@@ -760,7 +760,7 @@ h6,
 }
 .header .header__button-icon .line {
   fill: none;
-  transition: transform var(--slow_transition), stroke-dasharray var(--slow_transition), stroke-dashoffset var(--slow_transition), stroke var(--slow_transition);
+  transition: transform var(--slow_transition), stroke-dasharray var(--default_timing_function) 0.1s, stroke-dashoffset var(--slow_transition), stroke var(--slow_transition);
   stroke: var(--snow_white);
   stroke-width: 5.5;
   stroke-linecap: round;
