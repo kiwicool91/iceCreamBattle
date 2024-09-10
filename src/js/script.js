@@ -48,8 +48,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Slide Button
     const heroSlideButtons = document.querySelectorAll('.hero__slide-button');
     const heroImages = document.querySelectorAll('.hero__col-image');
+    const heroSlideInput = document.querySelector('.hero__slide-input');
 
-    if (heroSlideButtons.length && heroImages.length) {
+    if (heroSlideButtons.length && heroImages.length && heroSlideInput) {
         let activeHeroSlideButtons = document.querySelector('.hero__slide-button--active');
         heroSlideButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -70,6 +71,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 button.blur()
             })
         })
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.container--slide') && heroSlideInput.checked) {
+                heroSlideInput.checked = false;
+            }
+        }, false)
     }
 
     const results = Splitting({
@@ -100,6 +107,15 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', initOrDestroy, false);
 
     // parallax
-    // const rellax = new Rellax('.rellax');
+    const rellax = new Rellax('.rellax', {
+        speed: -2,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false,
+        minX: '5px',
+        maxX: '5px',
+    });
 
 });
