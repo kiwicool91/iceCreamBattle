@@ -779,7 +779,7 @@ h6,
     color: var(--snow_white);
     padding-top: var(--spacer_56);
 
-    @media (max-width: 991px) {
+    @media (max-width: 1024px) {
         padding-top: var(--spacer_32);
         padding-bottom: 10rem;
     }
@@ -949,7 +949,7 @@ h6,
         margin-top: var(--spacer_62);
         z-index: 2;
 
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
             margin-top: var(--spacer_32)
         }
     }
@@ -958,7 +958,7 @@ h6,
 
         // padding-left: calc(1.6rem + 4.2rem);
         // padding-right: calc(1.6rem + 4.2rem);
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
 
             &::after {
                 content: "";
@@ -975,7 +975,7 @@ h6,
     }
 
     .hero__slide-input {
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
             &:checked {
                 &+.hero__slide-label {
                     .hero__slide-label-icon {
@@ -1007,14 +1007,14 @@ h6,
         }
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1025px) {
         .hero__slide-label {
             display: none;
         }
     }
 
     .hero__slide-list-container {
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
             display: grid;
             grid-template-rows: 0fr;
             transition: grid-template-rows var(--default_transition);
@@ -1029,7 +1029,7 @@ h6,
         padding-top: 0;
         height: 12.4rem;
 
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
             flex-direction: column;
             height: auto;
             overflow: hidden;
@@ -1042,13 +1042,13 @@ h6,
         opacity: 1;
         transition: offset-distance var(--slow_transition) 0.7s, opacity var(--slow_transition) 0.7s;
 
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
             padding-top: var(--spacer_16);
             padding-bottom: var(--spacer_16);
         }
 
         &:nth-child(1) {
-            @media (max-width: 991px) {
+            @media (max-width: 1024px) {
                 border-top: 1px solid var(--deep_black)
             }
         }
@@ -1056,7 +1056,7 @@ h6,
         &:nth-child(1) .hero__slide-button {
             background-color: var(--pale_lime);
 
-            @media (max-width: 991px) {
+            @media (max-width: 1024px) {
                 background-color: transparent;
 
                 &::after {
@@ -1068,7 +1068,7 @@ h6,
         &:nth-child(2) .hero__slide-button {
             background-color: var(--icy_blue);
 
-            @media (max-width: 991px) {
+            @media (max-width: 1024px) {
                 background-color: transparent;
 
                 &::after {
@@ -1080,7 +1080,7 @@ h6,
         &:nth-child(3) .hero__slide-button {
             background-color: var(--light_lemon);
 
-            @media (max-width: 991px) {
+            @media (max-width: 1024px) {
                 background-color: transparent;
 
                 &::after {
@@ -1092,7 +1092,7 @@ h6,
         &:nth-child(4) .hero__slide-button {
             background-color: var(--mint_cream);
 
-            @media (max-width: 991px) {
+            @media (max-width: 1024px) {
                 background-color: transparent;
 
                 &::after {
@@ -1102,7 +1102,7 @@ h6,
         }
 
         &:nth-child(5) {
-            @media (max-width: 991px) {
+            @media (max-width: 1024px) {
                 padding-bottom: var(--spacer_32);
             }
         }
@@ -1110,7 +1110,7 @@ h6,
         &:nth-child(5) .hero__slide-button {
             background-color: var(--soft_peach);
 
-            @media (max-width: 991px) {
+            @media (max-width: 1024px) {
                 background-color: transparent;
 
                 &::after {
@@ -1119,7 +1119,7 @@ h6,
             }
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 1025px) {
             --c: calc(100 / var(--item-total));
             position: absolute;
             top: calc(50% - 4px);
@@ -1272,14 +1272,6 @@ h6,
         background-size: 100% 100%;
     }
 
-    @media (max-width: 991px) {
-        height: 4rem;
-    }
-
-    @media (max-width: 600px) {
-        height: 2rem;
-    }
-
     .svg {
         position: absolute;
         width: 0;
@@ -1315,10 +1307,12 @@ h6,
 
         @media (max-width: 991px) {
             height: 4rem;
+            top: -4rem;
         }
 
         @media (max-width: 600px) {
             height: 2rem;
+            top: -2rem;
         }
     }
 

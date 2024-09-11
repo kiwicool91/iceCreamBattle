@@ -904,7 +904,7 @@ h6,
   color: var(--snow_white);
   padding-top: var(--spacer_56);
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero {
     padding-top: var(--spacer_32);
     padding-bottom: 10rem;
@@ -1062,12 +1062,12 @@ h6,
   margin-top: var(--spacer_62);
   z-index: 2;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide {
     margin-top: var(--spacer_32);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .container--slide::after {
     content: "";
     position: absolute;
@@ -1080,7 +1080,7 @@ h6,
     z-index: -1;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-input:checked + .hero__slide-label .hero__slide-label-icon {
     transform: rotateX(180deg);
   }
@@ -1103,12 +1103,12 @@ h6,
 .hero .hero__slide-label .hero__slide-label-icon {
   transition: transform var(--slow_transition);
 }
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
   .hero .hero__slide-label {
     display: none;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-list-container {
     display: grid;
     grid-template-rows: 0fr;
@@ -1123,7 +1123,7 @@ h6,
   padding-top: 0;
   height: 12.4rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-list {
     flex-direction: column;
     height: auto;
@@ -1136,13 +1136,13 @@ h6,
   opacity: 1;
   transition: offset-distance var(--slow_transition) 0.7s, opacity var(--slow_transition) 0.7s;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item {
     padding-top: var(--spacer_16);
     padding-bottom: var(--spacer_16);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item:nth-child(1) {
     border-top: 1px solid var(--deep_black);
   }
@@ -1150,7 +1150,7 @@ h6,
 .hero .hero__slide-item:nth-child(1) .hero__slide-button {
   background-color: var(--pale_lime);
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item:nth-child(1) .hero__slide-button {
     background-color: transparent;
   }
@@ -1161,7 +1161,7 @@ h6,
 .hero .hero__slide-item:nth-child(2) .hero__slide-button {
   background-color: var(--icy_blue);
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item:nth-child(2) .hero__slide-button {
     background-color: transparent;
   }
@@ -1172,7 +1172,7 @@ h6,
 .hero .hero__slide-item:nth-child(3) .hero__slide-button {
   background-color: var(--light_lemon);
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item:nth-child(3) .hero__slide-button {
     background-color: transparent;
   }
@@ -1183,7 +1183,7 @@ h6,
 .hero .hero__slide-item:nth-child(4) .hero__slide-button {
   background-color: var(--mint_cream);
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item:nth-child(4) .hero__slide-button {
     background-color: transparent;
   }
@@ -1191,7 +1191,7 @@ h6,
     background-color: var(--mint_cream);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item:nth-child(5) {
     padding-bottom: var(--spacer_32);
   }
@@ -1199,7 +1199,7 @@ h6,
 .hero .hero__slide-item:nth-child(5) .hero__slide-button {
   background-color: var(--soft_peach);
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .hero .hero__slide-item:nth-child(5) .hero__slide-button {
     background-color: transparent;
   }
@@ -1207,7 +1207,7 @@ h6,
     background-color: var(--soft_peach);
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
   .hero .hero__slide-item {
     --c: calc(100 / var(--item-total));
     position: absolute;
@@ -1348,16 +1348,6 @@ h6,
     background-size: 100% 100%;
   }
 }
-@media (max-width: 991px) {
-  .footer {
-    height: 4rem;
-  }
-}
-@media (max-width: 600px) {
-  .footer {
-    height: 2rem;
-  }
-}
 .footer .svg {
   position: absolute;
   width: 0;
@@ -1397,11 +1387,13 @@ h6,
 @media (max-width: 991px) {
   .footer .clipped {
     height: 4rem;
+    top: -4rem;
   }
 }
 @media (max-width: 600px) {
   .footer .clipped {
     height: 2rem;
+    top: -2rem;
   }
 }
 .footer .container {
